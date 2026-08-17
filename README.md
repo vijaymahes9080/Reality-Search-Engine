@@ -102,11 +102,6 @@ Traditional search engines index **webpages and text links**. The **Reality Sear
 
 <div align="center">
 
-### 🎥 Live Animated Web Application Demo
-<img src="docs/videos/demo_walkthrough.gif" alt="Reality Search Engine Live App Video Demo" width="100%" style="border-radius: 12px; box-shadow: 0 10px 30px rgba(0,240,255,0.25);" />
-
-<br/><br/>
-
 | 🗺️ Interactive GIS Emergency Map & Telemetry | 🕸️ Reality Knowledge Graph & Threat Vectors |
 |:---:|:---:|
 | <img src="docs/images/gis_map_preview.png" alt="GIS Map Interface" width="100%" style="border-radius: 8px;" /> | <img src="docs/images/knowledge_graph_preview.png" alt="Knowledge Graph Interface" width="100%" style="border-radius: 8px;" /> |
