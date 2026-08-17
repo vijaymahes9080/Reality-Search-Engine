@@ -15,7 +15,7 @@
 
 <br/>
 
-![Hero Banner](https://img.shields.io/badge/🚀_REALITY_SEARCH_ENGINE-SEE_THE_WORLD_DIFFERENTLY-blue?style=for-the-badge&labelColor=0f172a&color=3b82f6)
+<img src="docs/images/hero_preview.png" alt="Reality Search Engine Hero Interface" width="100%" style="border-radius: 12px; box-shadow: 0 10px 30px rgba(0,240,255,0.2);" />
 
 </div>
 
@@ -93,6 +93,18 @@ Traditional search engines index **webpages and text links**. The **Reality Sear
                                    ▼
                      Reality Intelligence Report
 ```
+
+</div>
+
+---
+
+## 📸 Visual Platform Showcase
+
+<div align="center">
+
+| 🗺️ Interactive GIS Emergency Map & Telemetry | 🕸️ Reality Knowledge Graph & Threat Vectors |
+|:---:|:---:|
+| <img src="docs/images/gis_map_preview.png" alt="GIS Map Interface" width="100%" style="border-radius: 8px;" /> | <img src="docs/images/knowledge_graph_preview.png" alt="Knowledge Graph Interface" width="100%" style="border-radius: 8px;" /> |
 
 </div>
 
