@@ -17,6 +17,7 @@ import ScenarioSandbox from './components/ScenarioSandbox';
 import RouteOptimizer from './components/RouteOptimizer';
 import DroneInspector from './components/DroneInspector';
 import IoTSensorStream from './components/IoTSensorStream';
+import RealityCommandDashboard from './components/RealityCommandDashboard';
 
 import { SCENARIOS } from './data/scenarios';
 import { parseNaturalLanguageQuery } from './utils/queryParser';
@@ -164,6 +165,18 @@ export default function App() {
             </button>
 
             <button
+              onClick={() => setActiveTab('command')}
+              className={`flex items-center gap-2 px-3.5 py-2 rounded-xl transition font-bold whitespace-nowrap ${
+                activeTab === 'command'
+                  ? 'bg-gradient-to-r from-reality-cyan/20 to-blue-500/20 text-reality-cyan border border-reality-cyan/40 shadow-sm'
+                  : 'text-gray-400 hover:text-gray-200 hover:bg-dark-800'
+              }`}
+            >
+              <Cpu className="w-4 h-4 text-reality-cyan animate-pulse" />
+              <span>Command Center</span>
+            </button>
+
+            <button
               onClick={() => setActiveTab('data')}
               className={`flex items-center gap-2 px-3.5 py-2 rounded-xl transition font-bold whitespace-nowrap ${
                 activeTab === 'data'
@@ -263,6 +276,10 @@ export default function App() {
 
         {activeTab === 'droneInspector' && (
           <DroneInspector scenario={currentScenario} />
+        )}
+
+        {activeTab === 'command' && (
+          <RealityCommandDashboard scenario={currentScenario} />
         )}
 
         {activeTab === 'data' && (
