@@ -12,6 +12,7 @@
 ![Status](https://img.shields.io/badge/Build-Passing-brightgreen)
 ![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-orange)
 ![Stars](https://img.shields.io/github/stars/vijaymahes9080/Reality-Search-Engine?style=social)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-gh--pages-00F0FF?logo=github)](https://vijaymahes9080.github.io/Reality-Search-Engine)
 
 <br/>
 
