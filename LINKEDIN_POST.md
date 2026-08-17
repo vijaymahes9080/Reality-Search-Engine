@@ -1,6 +1,15 @@
-# 🚀 LinkedIn Launch Posts & Media Assets — Reality Search Engine
+# 🚀 LinkedIn Launch Posts & Media Assets Output — Reality Search Engine
 
-Here are **3 copy-paste ready LinkedIn post templates** complete with image attachment guides, video walkthrough scripts, key tech highlights, and high-impact hashtags.
+Here is your complete **LinkedIn Launch Package**, featuring **3 copy-paste ready post templates**, **image previews**, and the **recorded WebP demo video walkthrough**.
+
+---
+
+## 🎬 Real WebP Demo Video Recording File
+- **Video Path**: `docs/videos/demo_walkthrough.webp`
+- **Screenshot Path**: `docs/images/evidence_inspector_preview.png`
+- **Hero Image Path**: `docs/images/hero_preview.png`
+- **GIS Map Image Path**: `docs/images/gis_map_preview.png`
+- **Knowledge Graph Image Path**: `docs/images/knowledge_graph_preview.png`
 
 ---
 
@@ -27,15 +36,16 @@ The platform instantly generates a full-spectrum intelligence report:
 💻 Tech Stack: React 18, Vite 5, Tailwind CSS, Leaflet 1.9, Canvas 3D, PostCSS
 ⭐ Open Source on GitHub: https://github.com/vijaymahes9080/Reality-Search-Engine
 
-Check out the preview screenshots below! 👇
+Check out the preview video & images below! 👇
 
 #AI #Geospatial #ReactJS #ViteJS #OpenSource #DisasterManagement #WebDevelopment #Innovation #Startup #TechCommunity #MachineLearning #TamilNadu
 ```
 
-### 📸 Media Images to Attach on LinkedIn:
-- `docs/images/hero_preview.png`
-- `docs/images/gis_map_preview.png`
-- `docs/images/knowledge_graph_preview.png`
+### 📸 Media Files to Attach on LinkedIn:
+- `docs/videos/demo_walkthrough.webp` (Demo Video)
+- `docs/images/hero_preview.png` (Hero Dashboard Image)
+- `docs/images/gis_map_preview.png` (GIS Map Image)
+- `docs/images/knowledge_graph_preview.png` (Knowledge Graph Image)
 
 ---
 
@@ -62,7 +72,7 @@ I built **Reality Search Engine** using React 18 + Vite 5 + Leaflet 1.9 to trans
 
 ---
 
-## 🎬 Option 3: Short Video & Demo Walkthrough Script
+## 🎬 Option 3: Short Video & Demo Walkthrough
 
 ```markdown
 🎥 DEMO WALKTHROUGH: Watch Reality Search Engine predict flood impact & reroute emergency convoys in real-time! 🚨
