@@ -1,0 +1,11 @@
+{
+    "name": "vijay/reality-search-engine",
+    "description": "Reality Search Engine",
+    "authors": [
+        {
+            "name": "Vijay Mahes",
+            "email": "Vijaypradhap2004@gmail.com"
+        }
+    ],
+    "require": {}
+}
