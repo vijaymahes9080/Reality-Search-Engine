@@ -2,19 +2,23 @@ import React from 'react';
 import { 
   Globe, 
   Activity, 
-  Satellite, 
-  ShieldCheck, 
   FileText, 
   Sparkles,
-  Radio
+  Radio,
+  Languages
 } from 'lucide-react';
 import { SCENARIOS } from '../data/scenarios';
+import { TRANSLATIONS } from '../utils/i18n';
 
 export default function Navbar({ 
   currentScenario, 
   onSelectScenario, 
-  onOpenReport 
+  onOpenReport,
+  lang,
+  onToggleLang
 }) {
+  const t = TRANSLATIONS[lang] || TRANSLATIONS.en;
+
   return (
     <header className="border-b border-gray-800 bg-dark-900/90 backdrop-blur-md sticky top-0 z-50 px-4 lg:px-6 py-3">
       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
@@ -33,31 +37,41 @@ export default function Navbar({
           <div>
             <div className="flex items-center gap-2">
               <h1 className="text-xl font-extrabold tracking-tight bg-gradient-to-r from-white via-gray-200 to-reality-cyan bg-clip-text text-transparent">
-                REALITY SEARCH ENGINE
+                {t.title}
               </h1>
               <span className="px-2 py-0.5 text-[10px] font-mono font-semibold bg-reality-cyan/10 text-reality-cyan border border-reality-cyan/30 rounded-full">
-                v2.4 PRO
+                v3.8 INNOVATION
               </span>
             </div>
             <p className="text-xs text-gray-400 font-mono">
-              AI Real-World Situation & Geospatial Intelligence
+              {t.subtitle}
             </p>
           </div>
         </div>
 
-        {/* Telemetry Status Bar & Report Action */}
+        {/* Telemetry Status Bar, Language Switcher & Report Action */}
         <div className="flex flex-wrap items-center gap-3">
+          {/* Language Switcher */}
+          <button
+            onClick={onToggleLang}
+            className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-dark-800 border border-gray-700 hover:border-reality-cyan text-xs font-mono font-bold text-reality-cyan transition"
+            title="Toggle Tamil / English Language"
+          >
+            <Languages className="w-4 h-4" />
+            <span>{lang === 'en' ? 'தமிழ்' : 'English'}</span>
+          </button>
+
           {/* Active Feeds Status Indicator */}
           <div className="hidden xl:flex items-center gap-2 px-3 py-1.5 rounded-lg bg-dark-800 border border-gray-800 text-xs font-mono text-gray-300">
             <Radio className="w-3.5 h-3.5 text-reality-emerald animate-pulse" />
-            <span>Feeds: <strong className="text-white">4 Active (Sentinel-2, IMD, TNSDMA, IoT)</strong></span>
+            <span>Feeds: <strong className="text-white">5 Active (Sentinel, IMD, IoT, Drone, TNSDMA)</strong></span>
           </div>
 
           {/* System Telemetry */}
           <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-dark-800 border border-gray-800 text-xs font-mono text-gray-300">
             <Activity className="w-3.5 h-3.5 text-reality-cyan animate-pulse" />
-            <span className="hidden sm:inline">Engine Status:</span>
-            <span className="text-reality-emerald font-semibold">99.8% Operational</span>
+            <span className="hidden sm:inline">Engine:</span>
+            <span className="text-reality-emerald font-semibold">99.9% Operational</span>
           </div>
 
           {/* Generate Reality Report Button */}
@@ -66,7 +80,7 @@ export default function Navbar({
             className="flex items-center gap-2 px-4 py-1.5 rounded-lg bg-gradient-to-r from-reality-cyan to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-black font-semibold text-xs tracking-wide transition shadow-lg shadow-reality-cyan/20 active:scale-95"
           >
             <FileText className="w-4 h-4" />
-            <span>Generate Reality Report</span>
+            <span>{t.generateReport}</span>
           </button>
         </div>
       </div>
@@ -74,7 +88,7 @@ export default function Navbar({
       {/* Preset Scenario Selector Chips */}
       <div className="mt-3 flex items-center gap-2 overflow-x-auto pb-1 scrollbar-thin scrollbar-thumb-gray-800">
         <span className="text-xs font-mono text-gray-400 whitespace-nowrap flex items-center gap-1">
-          <Sparkles className="w-3.5 h-3.5 text-reality-cyan" /> Scenarios:
+          <Sparkles className="w-3.5 h-3.5 text-reality-cyan" /> {t.scenarios}:
         </span>
         {SCENARIOS.map((scen) => {
           const isActive = currentScenario.id === scen.id;
