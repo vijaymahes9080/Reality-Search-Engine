@@ -1,11 +1,12 @@
 # 🚀 LinkedIn Launch Posts & Media Assets Output — Reality Search Engine
 
-Here is your complete **LinkedIn Launch Package**, featuring **3 copy-paste ready post templates**, **image previews**, and the **recorded WebP demo video walkthrough**.
+Here is your complete **LinkedIn Launch Package**, featuring **3 copy-paste ready post templates**, **image previews**, and the **animated video demo walkthrough (.gif & .mp4)**.
 
 ---
 
-## 🎬 Real WebP Demo Video Recording File
-- **Video Path**: `docs/videos/demo_walkthrough.webp`
+## 🎬 Animated Video Demo Walkthrough File
+- **Animated GIF Video Path**: `docs/videos/demo_walkthrough.gif`
+- **MP4 Video File Path**: `docs/videos/demo_walkthrough.mp4`
 - **Screenshot Path**: `docs/images/evidence_inspector_preview.png`
 - **Hero Image Path**: `docs/images/hero_preview.png`
 - **GIS Map Image Path**: `docs/images/gis_map_preview.png`
@@ -42,7 +43,8 @@ Check out the preview video & images below! 👇
 ```
 
 ### 📸 Media Files to Attach on LinkedIn:
-- `docs/videos/demo_walkthrough.webp` (Demo Video)
+- `docs/videos/demo_walkthrough.gif` (Animated Demo Video)
+- `docs/videos/demo_walkthrough.mp4` (MP4 Video File)
 - `docs/images/hero_preview.png` (Hero Dashboard Image)
 - `docs/images/gis_map_preview.png` (GIS Map Image)
 - `docs/images/knowledge_graph_preview.png` (Knowledge Graph Image)
