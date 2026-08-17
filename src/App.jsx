@@ -90,14 +90,26 @@ export default function App() {
         <QueryBreakdown scenario={currentScenario} />
 
         {/* Navigation Tabs Bar */}
-        <div className="flex items-center justify-between border-b border-gray-800 pb-2 overflow-x-auto">
+        <div className="bg-dark-800/80 border border-gray-800 rounded-2xl p-2 shadow-xl backdrop-blur-md overflow-x-auto">
           <div className="flex items-center gap-2 font-mono text-xs">
             <button
+              onClick={() => setActiveTab('command')}
+              className={`flex items-center gap-2 px-4 py-2.5 rounded-xl transition font-bold whitespace-nowrap ${
+                activeTab === 'command'
+                  ? 'bg-gradient-to-r from-reality-cyan to-blue-600 text-black shadow-lg shadow-reality-cyan/20 font-bold scale-[1.02]'
+                  : 'text-gray-300 hover:text-white hover:bg-dark-700/60'
+              }`}
+            >
+              <Cpu className="w-4 h-4 animate-pulse text-black" />
+              <span>🛡️ Command Center</span>
+            </button>
+
+            <button
               onClick={() => setActiveTab('overview')}
-              className={`flex items-center gap-2 px-3.5 py-2 rounded-xl transition font-bold whitespace-nowrap ${
+              className={`flex items-center gap-2 px-4 py-2.5 rounded-xl transition font-bold whitespace-nowrap ${
                 activeTab === 'overview'
-                  ? 'bg-gradient-to-r from-reality-cyan/20 to-blue-500/20 text-reality-cyan border border-reality-cyan/40 shadow-sm'
-                  : 'text-gray-400 hover:text-gray-200 hover:bg-dark-800'
+                  ? 'bg-reality-cyan/20 text-reality-cyan border border-reality-cyan/50 shadow-sm'
+                  : 'text-gray-400 hover:text-gray-200 hover:bg-dark-700/60'
               }`}
             >
               <Layers className="w-4 h-4" />
@@ -106,10 +118,10 @@ export default function App() {
 
             <button
               onClick={() => setActiveTab('globe3d')}
-              className={`flex items-center gap-2 px-3.5 py-2 rounded-xl transition font-bold whitespace-nowrap ${
+              className={`flex items-center gap-2 px-4 py-2.5 rounded-xl transition font-bold whitespace-nowrap ${
                 activeTab === 'globe3d'
-                  ? 'bg-gradient-to-r from-reality-cyan/20 to-blue-500/20 text-reality-cyan border border-reality-cyan/40 shadow-sm'
-                  : 'text-gray-400 hover:text-gray-200 hover:bg-dark-800'
+                  ? 'bg-reality-cyan/20 text-reality-cyan border border-reality-cyan/50 shadow-sm'
+                  : 'text-gray-400 hover:text-gray-200 hover:bg-dark-700/60'
               }`}
             >
               <GlobeIcon className="w-4 h-4 text-reality-cyan" />
@@ -118,22 +130,22 @@ export default function App() {
 
             <button
               onClick={() => setActiveTab('map')}
-              className={`flex items-center gap-2 px-3.5 py-2 rounded-xl transition font-bold whitespace-nowrap ${
+              className={`flex items-center gap-2 px-4 py-2.5 rounded-xl transition font-bold whitespace-nowrap ${
                 activeTab === 'map'
-                  ? 'bg-gradient-to-r from-reality-cyan/20 to-blue-500/20 text-reality-cyan border border-reality-cyan/40 shadow-sm'
-                  : 'text-gray-400 hover:text-gray-200 hover:bg-dark-800'
+                  ? 'bg-reality-cyan/20 text-reality-cyan border border-reality-cyan/50 shadow-sm'
+                  : 'text-gray-400 hover:text-gray-200 hover:bg-dark-700/60'
               }`}
             >
-              <Map className="w-4 h-4" />
+              <Map className="w-4 h-4 text-reality-emerald" />
               <span>{t.gisMap}</span>
             </button>
 
             <button
               onClick={() => setActiveTab('sandbox')}
-              className={`flex items-center gap-2 px-3.5 py-2 rounded-xl transition font-bold whitespace-nowrap ${
+              className={`flex items-center gap-2 px-4 py-2.5 rounded-xl transition font-bold whitespace-nowrap ${
                 activeTab === 'sandbox'
-                  ? 'bg-gradient-to-r from-reality-cyan/20 to-blue-500/20 text-reality-cyan border border-reality-cyan/40 shadow-sm'
-                  : 'text-gray-400 hover:text-gray-200 hover:bg-dark-800'
+                  ? 'bg-reality-rose/20 text-reality-rose border border-reality-rose/50 shadow-sm'
+                  : 'text-gray-400 hover:text-gray-200 hover:bg-dark-700/60'
               }`}
             >
               <Sliders className="w-4 h-4 text-reality-rose" />
@@ -142,10 +154,10 @@ export default function App() {
 
             <button
               onClick={() => setActiveTab('routeOptimizer')}
-              className={`flex items-center gap-2 px-3.5 py-2 rounded-xl transition font-bold whitespace-nowrap ${
+              className={`flex items-center gap-2 px-4 py-2.5 rounded-xl transition font-bold whitespace-nowrap ${
                 activeTab === 'routeOptimizer'
-                  ? 'bg-gradient-to-r from-reality-cyan/20 to-blue-500/20 text-reality-cyan border border-reality-cyan/40 shadow-sm'
-                  : 'text-gray-400 hover:text-gray-200 hover:bg-dark-800'
+                  ? 'bg-reality-emerald/20 text-reality-emerald border border-reality-emerald/50 shadow-sm'
+                  : 'text-gray-400 hover:text-gray-200 hover:bg-dark-700/60'
               }`}
             >
               <Navigation className="w-4 h-4 text-reality-emerald" />
@@ -154,10 +166,10 @@ export default function App() {
 
             <button
               onClick={() => setActiveTab('droneInspector')}
-              className={`flex items-center gap-2 px-3.5 py-2 rounded-xl transition font-bold whitespace-nowrap ${
+              className={`flex items-center gap-2 px-4 py-2.5 rounded-xl transition font-bold whitespace-nowrap ${
                 activeTab === 'droneInspector'
-                  ? 'bg-gradient-to-r from-reality-cyan/20 to-blue-500/20 text-reality-cyan border border-reality-cyan/40 shadow-sm'
-                  : 'text-gray-400 hover:text-gray-200 hover:bg-dark-800'
+                  ? 'bg-reality-purple/20 text-reality-purple border border-reality-purple/50 shadow-sm'
+                  : 'text-gray-400 hover:text-gray-200 hover:bg-dark-700/60'
               }`}
             >
               <Satellite className="w-4 h-4 text-reality-purple" />
@@ -165,23 +177,11 @@ export default function App() {
             </button>
 
             <button
-              onClick={() => setActiveTab('command')}
-              className={`flex items-center gap-2 px-3.5 py-2 rounded-xl transition font-bold whitespace-nowrap ${
-                activeTab === 'command'
-                  ? 'bg-gradient-to-r from-reality-cyan/20 to-blue-500/20 text-reality-cyan border border-reality-cyan/40 shadow-sm'
-                  : 'text-gray-400 hover:text-gray-200 hover:bg-dark-800'
-              }`}
-            >
-              <Cpu className="w-4 h-4 text-reality-cyan animate-pulse" />
-              <span>Command Center</span>
-            </button>
-
-            <button
               onClick={() => setActiveTab('data')}
-              className={`flex items-center gap-2 px-3.5 py-2 rounded-xl transition font-bold whitespace-nowrap ${
+              className={`flex items-center gap-2 px-4 py-2.5 rounded-xl transition font-bold whitespace-nowrap ${
                 activeTab === 'data'
-                  ? 'bg-gradient-to-r from-reality-cyan/20 to-blue-500/20 text-reality-cyan border border-reality-cyan/40 shadow-sm'
-                  : 'text-gray-400 hover:text-gray-200 hover:bg-dark-800'
+                  ? 'bg-reality-cyan/20 text-reality-cyan border border-reality-cyan/50 shadow-sm'
+                  : 'text-gray-400 hover:text-gray-200 hover:bg-dark-700/60'
               }`}
             >
               <Table className="w-4 h-4" />
@@ -190,13 +190,13 @@ export default function App() {
 
             <button
               onClick={() => setActiveTab('graph')}
-              className={`flex items-center gap-2 px-3.5 py-2 rounded-xl transition font-bold whitespace-nowrap ${
+              className={`flex items-center gap-2 px-4 py-2.5 rounded-xl transition font-bold whitespace-nowrap ${
                 activeTab === 'graph'
-                  ? 'bg-gradient-to-r from-reality-cyan/20 to-blue-500/20 text-reality-cyan border border-reality-cyan/40 shadow-sm'
-                  : 'text-gray-400 hover:text-gray-200 hover:bg-dark-800'
+                  ? 'bg-reality-purple/20 text-reality-purple border border-reality-purple/50 shadow-sm'
+                  : 'text-gray-400 hover:text-gray-200 hover:bg-dark-700/60'
               }`}
             >
-              <Network className="w-4 h-4" />
+              <Network className="w-4 h-4 text-reality-purple" />
               <span>{t.knowledgeGraph}</span>
             </button>
           </div>
