@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280">
+  <defs>
+    <linearGradient id="grid-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a"/>
+      <stop offset="100%" style="stop-color:#1e293b"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="400" height="280" rx="12" fill="url(#grid-bg)"/>
+
+  <!-- Table header -->
+  <rect x="20" y="25" width="360" height="28" rx="4" fill="#0f172a"/>
+  <text x="40" y="43" fill="#64748b" font-family="monospace" font-size="8" font-weight="600">ENTITY</text>
+  <text x="120" y="43" fill="#64748b" font-family="monospace" font-size="8" font-weight="600">TYPE</text>
+  <text x="200" y="43" fill="#64748b" font-family="monospace" font-size="8" font-weight="600">RISK</text>
+  <text x="260" y="43" fill="#64748b" font-family="monospace" font-size="8" font-weight="600">BEDS</text>
+  <text x="320" y="43" fill="#64748b" font-family="monospace" font-size="8" font-weight="600">STATUS</text>
+
+  <!-- Row 1 - High Risk -->
+  <rect x="20" y="55" width="360" height="26" rx="0" fill="#1e293b"/>
+  <text x="40" y="72" fill="#e2e8f0" font-family="monospace" font-size="8">GH Chennai</text>
+  <text x="120" y="72" fill="#94a3b8" font-family="monospace" font-size="8">Hospital</text>
+  <rect x="200" y="62" width="30" height="12" rx="3" fill="#ef4444" opacity="0.2"/>
+  <text x="215" y="72" text-anchor="middle" fill="#ef4444" font-family="monospace" font-size="8" font-weight="bold">9.2</text>
+  <text x="260" y="72" fill="#e2e8f0" font-family="monospace" font-size="8">450</text>
+  <rect x="320" y="62" width="48" height="12" rx="3" fill="#ef4444" opacity="0.15"/>
+  <text x="344" y="72" text-anchor="middle" fill="#ef4444" font-family="monospace" font-size="7">CRITICAL</text>
+
+  <!-- Row 2 - Medium Risk -->
+  <rect x="20" y="83" width="360" height="26" rx="0" fill="#0f172a"/>
+  <text x="40" y="100" fill="#e2e8f0" font-family="monospace" font-size="8">SK Hospital</text>
+  <text x="120" y="100" fill="#94a3b8" font-family="monospace" font-size="8">Hospital</text>
+  <rect x="200" y="90" width="30" height="12" rx="3" fill="#f59e0b" opacity="0.2"/>
+  <text x="215" y="100" text-anchor="middle" fill="#f59e0b" font-family="monospace" font-size="8" font-weight="bold">6.4</text>
+  <text x="260" y="100" fill="#e2e8f0" font-family="monospace" font-size="8">320</text>
+  <rect x="320" y="90" width="48" height="12" rx="3" fill="#f59e0b" opacity="0.15"/>
+  <text x="344" y="100" text-anchor="middle" fill="#f59e0b" font-family="monospace" font-size="7">AFFECTED</text>
+
+  <!-- Row 3 - Safe -->
+  <rect x="20" y="111" width="360" height="26" rx="0" fill="#1e293b"/>
+  <text x="40" y="128" fill="#e2e8f0" font-family="monospace" font-size="8">Apollo Madurai</text>
+  <text x="120" y="128" fill="#94a3b8" font-family="monospace" font-size="8">Hospital</text>
+  <rect x="200" y="118" width="30" height="12" rx="3" fill="#22c55e" opacity="0.2"/>
+  <text x="215" y="128" text-anchor="middle" fill="#22c55e" font-family="monospace" font-size="8" font-weight="bold">1.1</text>
+  <text x="260" y="128" fill="#e2e8f0" font-family="monospace" font-size="8">680</text>
+  <rect x="320" y="118" width="48" height="12" rx="3" fill="#22c55e" opacity="0.15"/>
+  <text x="344" y="128" text-anchor="middle" fill="#22c55e" font-family="monospace" font-size="7">SAFE</text>
+
+  <!-- Row 4 -->
+  <rect x="20" y="139" width="360" height="26" rx="0" fill="#0f172a"/>
+  <text x="40" y="156" fill="#e2e8f0" font-family="monospace" font-size="8">Relief Camp 3</text>
+  <text x="120" y="156" fill="#94a3b8" font-family="monospace" font-size="8">Shelter</text>
+  <rect x="200" y="146" width="30" height="12" rx="3" fill="#f59e0b" opacity="0.2"/>
+  <text x="215" y="156" text-anchor="middle" fill="#f59e0b" font-family="monospace" font-size="8" font-weight="bold">5.8</text>
+  <text x="260" y="156" fill="#e2e8f0" font-family="monospace" font-size="8">1200</text>
+  <rect x="320" y="146" width="48" height="12" rx="3" fill="#f59e0b" opacity="0.15"/>
+  <text x="344" y="156" text-anchor="middle" fill="#f59e0b" font-family="monospace" font-size="7">WARNING</text>
+
+  <!-- Row 5 -->
+  <rect x="20" y="167" width="360" height="26" rx="0" fill="#1e293b"/>
+  <text x="40" y="184" fill="#e2e8f0" font-family="monospace" font-size="8">Bridge NH-45</text>
+  <text x="120" y="184" fill="#94a3b8" font-family="monospace" font-size="8">Road</text>
+  <rect x="200" y="174" width="30" height="12" rx="3" fill="#ef4444" opacity="0.2"/>
+  <text x="215" y="184" text-anchor="middle" fill="#ef4444" font-family="monospace" font-size="8" font-weight="bold">8.7</text>
+  <text x="260" y="184" fill="#e2e8f0" font-family="monospace" font-size="8">-</text>
+  <rect x="320" y="174" width="48" height="12" rx="3" fill="#ef4444" opacity="0.15"/>
+  <text x="344" y="184" text-anchor="middle" fill="#ef4444" font-family="monospace" font-size="7">BLOCKED</text>
+
+  <!-- Search bar -->
+  <rect x="20" y="205" width="360" height="24" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+  <text x="35" y="220" fill="#64748b" font-family="monospace" font-size="8">&#x1F50D; Search entities, filter by risk...</text>
+
+  <!-- Export button -->
+  <rect x="280" y="240" width="100" height="24" rx="6" fill="#3b82f6" opacity="0.15" stroke="#3b82f6" stroke-width="1"/>
+  <text x="330" y="256" text-anchor="middle" fill="#3b82f6" font-family="system-ui" font-size="9" font-weight="600">&#x1F4E5; Export CSV</text>
+
+  <!-- Pagination -->
+  <text x="200" y="270" text-anchor="middle" fill="#64748b" font-family="system-ui" font-size="8">1 2 3 4 5 ... 24</text>
+
+  <!-- Label -->
+  <text x="200" y="270" text-anchor="middle" fill="none" font-family="system-ui, sans-serif" font-size="14" font-weight="600"> </text>
+</svg>
